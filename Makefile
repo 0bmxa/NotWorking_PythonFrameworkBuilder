@@ -121,7 +121,7 @@ clean-bzip2:
 # Download original BZip2 source code archive.
 downloads/bzip2-$(BZIP2_VERSION).tgz:
 	mkdir -p downloads
-	if [ ! -e downloads/bzip2-$(BZIP2_VERSION).tgz ]; then curl --fail -L http://www.bzip.org/$(BZIP2_VERSION)/bzip2-$(BZIP2_VERSION).tar.gz -o downloads/bzip2-$(BZIP2_VERSION).tgz; fi
+	if [ ! -e downloads/bzip2-$(BZIP2_VERSION).tgz ]; then curl --fail -L https://sourceforge.net/projects/bzip2/files/bzip2-$(BZIP2_VERSION).tar.gz/download -o downloads/bzip2-$(BZIP2_VERSION).tgz; fi
 
 ###########################################################################
 # XZ (LZMA)
